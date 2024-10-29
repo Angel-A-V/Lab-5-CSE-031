@@ -1,0 +1,46 @@
+TPS 1:
+Angel Vargas
+
+
+(1). MARS stands for MIPS Assembly Language Simulator.
+
+(2). [This was done on my laptop]
+
+(3). [This was done on my laptop]
+
+(4). [This was done on my laptop]
+
+(5). 
+	(a). To load an assembly file, click on the icon to load a file of your choosing. 
+	
+	(b). To compile the program, go to the Run menu and click Assemble.
+
+	(c). To run the assembled program, click on the green circle icon to execute the entire code.
+
+	(d). You cannot run the code before assembling because, just like in C/C++, you have to compile your code before it can run.
+	
+	(e). To assemble and run one line at a time, click on the green icon with a "1" next to it, which steps through the code line by line.
+	
+	(f). Based on what I read, you need to reassemble the code and click the Run button again after making any changes.
+
+(6). What this code seems to be doing is taking input from the user and adding it to the value of num which is stored in $t0 and the rest of the code just puts that sum into a saved register
+     then its put into a argument register to print the value of the of our sum.
+
+
+TPS 2:
+
+(1). The .data section is used for initializing variables in MARS/MIPS, while the .text section is where instructions are written. The .word directive allocates memory and initializes it with specific values.
+
+(2). What line 10 does is part of the Fibonacci sequence calculation. This line checks if the value in $t3 is equal to zero, indicating that the loop has completed. Until this condition is satisfied, it continues to loop through the function. When $t3 reaches zero, it jumps to the `finish` label to prepare for printing the final result.
+
+(3). This is where the loop is activated until the condition is satistfied so it makes the program go back the fib label at the begining of the program.
+
+(4). To set a breakpoint in the code you assemble it and then go to the text segment tab and on the left you can see this colum called Bkpt and you check that box to set a breakpoint in the code.
+
+(5). To continue running after the breakpoint you can just click the green arrow to run the program and it'll finish ruinning the code or you can click the one step run to do one step at a time.
+
+(6). Open the registers panel on the MARS/MIPS editor which displays the current values of all the registers after compiled and then you can click on the register value you would like to change and type in a number and run the program after.
+
+(7). The address of n is stored in $t3. Using the instructions on line 8, $t3 is first loaded with the address of n, and then the value at that address is stored in $t3. You can find the address in the data segment tab, where the value 13 is shown at address 268500992.
+
+(8). The syscall instruction in lines 19 and 21 is used to perform systemb level operations, line 19 sets $v0 to 1 to print the value in $a0, and line 21 sets $v0 to 10 to exit the program.
